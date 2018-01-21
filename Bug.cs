@@ -7,15 +7,10 @@ using System;
 [Serializable]
 public class Bug {
 
-    [OdinSerialize]
     public int bugID;
-    [OdinSerialize]
     public string bugDescription;
-    [OdinSerialize]
     public BugSeverity severity;
-    [OdinSerialize]
     public BugState state;
-    [OdinSerialize]
     public bool archived;
 
     public Bug(int bugID, string bugDescription, BugSeverity severity, BugState state) {
