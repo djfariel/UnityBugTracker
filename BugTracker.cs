@@ -330,7 +330,7 @@ public class BugTracker : OdinEditorWindow {
         NotFixingColor = Color.magenta;
         ArchivedColor = Color.gray;
         ItemsToShowPerPage = 5;
-        RecalculateMaxPages();
+        RecalculateVisibleList();
     }
 
     #endregion
@@ -345,10 +345,11 @@ public class BugTracker : OdinEditorWindow {
     }
 
     private void OnEnable() {
+        bugList = BugList.Instance;
         if(!EditorPrefs.GetBool("Initialized")) {
             Initialize();
         }
-        bugList = BugList.Instance;
+        RecalculateVisibleList();
         if(GUI.changed) {
             EditorUtility.SetDirty(BugList.Instance);
         }
