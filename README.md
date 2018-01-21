@@ -1,7 +1,7 @@
 # UnityBugTracker
 An in-editor bug tracker built with Odin for Unity for use by developers. Supports Unity's Collab feature. 
 
-The UnityBugTracker is licensed under the zlib license. See the License file for details.
+The UnityBugTracker is licensed under the zlib license. [See the License file for details.](https://github.com/djfariel/UnityBugTracker/blob/master/License.txt)
 
 Because this was built with Odin, it **REQUIRES** Odin. You can find the asset store link to it here: https://www.assetstore.unity3d.com/en/#!/content/89041
 
